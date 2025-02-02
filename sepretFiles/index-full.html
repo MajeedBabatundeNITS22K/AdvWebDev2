@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majeed Samsung Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Samsung Galaxy S24 Section */
+#s24 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack the image and text vertically */
+    height: 600px; /* Increased height to make the section bigger */
+    margin-top: 80px; /* Increased margin to give space from the top */
+    padding: 60px 20px; /* Increased padding for more space inside the section */
+    background-color: #f8f9fa;
+}
+
+.s24-heading {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Increased gap between image and text */
+}
+
+.s24-image {
+    width: 450px; /* Increased image size */
+    height: auto;
+    border-radius: 20px; /* Larger border radius for a softer look */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+}
+
+#s24 h2 {
+    font-size: 4em; /* Increased font size for header */
+    color: #343a40;
+    margin-bottom: 15px; /* Space below the header */
+}
+
+#s24 p {
+    font-size: 1.8em; /* Larger text for the description */
+    color: #495057;
+    margin-top: 5px;
+}
+
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #495057;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #ff6f61, #d63384);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #ff6f61;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 2.4em;
+    margin-top: 10px;
+}
+
+header p {
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+.s24-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.s24-image {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #343a40;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li {
+    font-size: 1.1em;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Main Section Styling */
+main {
+    padding: 60px 10%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.4em;
+    color: #495057;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 15px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '✔';
+    color: #ff6f61;
+    position: absolute;
+    left: 0;
+    font-size: 1.3em;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table td:first-child {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #d63384;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#contact li {
+    margin: 10px 0;
+    color: #495057;
+}
+
+#contact li a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact li a:hover {
+    color: #d63384;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#s24">Samsung Galaxy S24</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specifications</a></li>
+                <li><a href="#buy">Buy Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Samsung Galaxy S24 Section (on top of the features section) -->
+        <section id="s24">
+            <div class="s24-heading">
+                <img src="https://github.com/MajeedBabatundeNITS22K/Implementing-a-Single-Page-Website-style-page/blob/main/S24%20image.jpeg?raw=true" alt="Samsung Galaxy S24" class="s24-image">
+                <div>
+                    <h2>Samsung Galaxy S24</h2>
+                    <p>The future of smartphones, now available for you!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Top Features</h2>
+            <ul>
+                <li>Stunning 6.8" Dynamic AMOLED 2X display</li>
+                <li>Powerful Snapdragon 8 Gen 2 chip</li>
+                <li>108MP Ultra High-Resolution Camera</li>
+                <li>Fast Charging & Long-lasting Battery</li>
+                <li>5G Connectivity for Speed</li>
+            </ul>
+        </section>
+
+        <!-- Specifications Section -->
+        <section id="specs">
+            <h2>Specifications</h2>
+            <table>
+                <tr>
+                    <td>Display:</td>
+                    <td>6.8" Dynamic AMOLED 2X</td>
+                </tr>
+                <tr>
+                    <td>Processor:</td>
+                    <td>Snapdragon 8 Gen 2</td>
+                </tr>
+                <tr>
+                    <td>Camera:</td>
+                    <td>108MP Main, 12MP Ultra-wide, 10MP Telephoto</td>
+                </tr>
+                <tr>
+                    <td>Battery:</td>
+                    <td>5000mAh with 45W Fast Charging</td>
+                </tr>
+                <tr>
+                    <td>Storage Options:</td>
+                    <td>128GB, 256GB, 512GB</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="buy">
+            <h2>Buy Samsung Galaxy S24</h2>
+            <p>Get the latest Samsung Galaxy S24 today!</p>
+            <!-- Buy Now Button with Link -->
+            <button onclick="window.location.href='https://www.telia.fi/kauppa/tuote/samsung-galaxy-s24-ultra-5g'">Buy Now</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: support@samsung.com</li>
+                <li>majeedbabs03@gmail.com</li>
+                <li>+358 466336898</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Samsung Electronics. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+    </script>
+</body>
+</html>
